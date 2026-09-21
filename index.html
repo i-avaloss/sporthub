@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SportHub | Inicio</title>
+
+    <!-- Bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-trophy"></i> SportHub
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="ligas.html">Ligas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="universitario.html">Universitario</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="talento.html">Talento Mexicano</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h1 class="display-4 fw-bold">
+                    La pagina para los mejores aficionados
+                </h1>
+
+                <p class="lead">
+                    Compra tickets, conoce las principales ligas y descubre
+                    nuevos talentos deportivos.
+                </p>
+
+                <a href="eventos.html" class="btn btn-primary btn-lg">
+                    ¡Busca un evento!
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMZkF298MrClo54BRtQZFCsMT_3Xp5rKh2xX1Auj-P0g&s=10"
+                    class="img-fluid rounded shadow"
+                    alt="Estadio deportivo">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DEPORTES -->
+<section class="container py-5">
+
+    <div class="text-center mb-4">
+
+        <h2>Selecciona un deporte</h2>
+
+        <p class="text-muted">
+            Selecciona una opción para consultar sus eventos.
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <!-- NBA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card sport-card h-100">
+
+                <img
+                    src="https://img.magnific.com/foto-gratis/concepto-hacer-deporte_23-2151937750.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt="NFL">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">NBA</h5>
+
+                    <p class="card-text">
+                        Consulta eventos y partidos de basketball.
+                    </p>
+
+                    <button
+                        class="btn btn-dark"
+                        onclick="irDeporte('nfl')">
+                        Ver NBA
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+ 
+
+
+        <!-- NFL -->
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card sport-card h-100">
+
+                <img
+                    src="https://www.primeroydiez.com/wp-content/uploads/patrick-mahomes-y-travis-kelce-en-un-partifo-3.png"
+                    class="card-img-top"
+                    alt="NFL">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">NFL</h5>
+
+                    <p class="card-text">
+                        Encuentra partidos y eventos de football.
+                    </p>
+
+                    <button
+                        class="btn btn-dark"
+                        onclick="irDeporte('nfl')">
+                        Ver NFL
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MLB -->
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card sport-card h-100">
+
+                <img
+                    src="https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w2208/mlb/mjj9hynfy6bq7q3exvbi.jpg"
+                    class="card-img-top"
+                    alt="MLB">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">MLB</h5>
+
+                    <p class="card-text">
+                        Consulta partidos y eventos de baseball.
+                    </p>
+
+                    <button
+                        class="btn btn-dark"
+                        onclick="irDeporte('mlb')">
+                        Ver MLB
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NHL -->
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card sport-card h-150">
+
+                <img
+                    src="https://t4.ftcdn.net/jpg/21/75/97/59/360_F_2175975940_g7c5e5BkqykYp0mfeherDE4HWzVsRHlc.jpg"
+                    class="card-img-top"
+                    alt="NHL">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">NHL</h5>
+
+                    <p class="card-text">
+                        Descubre partidos de hockey.
+                    </p>
+
+                    <button
+                        class="btn btn-dark"
+                        onclick="irDeporte('nhl')">
+                        Ver NHL
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FIFA -->
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card sport-card h-100">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlw1qt_xVnjnQmZj19ULUkiJxOc1ClFCf2gMxVO13x-kG_Dd1L2Krk3qA&s=10"
+                    class="card-img-top"
+                    alt="FIFA">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">FIFA</h5>
+
+                    <p class="card-text">
+                        Consulta eventos internacionales de fútbol.
+                    </p>
+
+                    <button
+                        class="btn btn-dark"
+                        onclick="irDeporte('fifa')">
+                        Ver FIFA
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+
+    <p class="mb-0">
+        © 2026 SportHub | Proyecto académico EBC
+    </p>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript propio -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
